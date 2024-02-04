@@ -1,0 +1,228 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{DBA6096E-EAEA-402D-82AF-AFB82D474B29}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <StartupObject>SUWEGER_INDONESIA.DASHBOARD</StartupObject>
+    <RootNamespace>SUWEGER_INDONESIA</RootNamespace>
+    <AssemblyName>SUWEGER INDONESIA</AssemblyName>
+    <FileAlignment>512</FileAlignment>
+    <MyType>WindowsFormsWithCustomSubMain</MyType>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DocumentationFile>SUWEGER INDONESIA.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DocumentationFile>SUWEGER INDONESIA.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionExplicit>On</OptionExplicit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionCompare>Binary</OptionCompare>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionStrict>Off</OptionStrict>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionInfer>On</OptionInfer>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationManifest>My Project\app.manifest</ApplicationManifest>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.DirectoryServices" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Net.Http" />
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Data" />
+    <Import Include="System.Drawing" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Windows.Forms" />
+    <Import Include="System.Linq" />
+    <Import Include="System.Xml.Linq" />
+    <Import Include="System.Threading.Tasks" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="ABSENSI.Designer.vb">
+      <DependentUpon>ABSENSI.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ABSENSI.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ConnectDB.vb" />
+    <Compile Include="DASHBOARD.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DASHBOARD.Designer.vb">
+      <DependentUpon>DASHBOARD.vb</DependentUpon>
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="KARYAWAN.Designer.vb">
+      <DependentUpon>KARYAWAN.vb</DependentUpon>
+    </Compile>
+    <Compile Include="KARYAWAN.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LABSENSI.Designer.vb">
+      <DependentUpon>LABSENSI.vb</DependentUpon>
+    </Compile>
+    <Compile Include="LABSENSI.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LOGIN.Designer.vb">
+      <DependentUpon>LOGIN.vb</DependentUpon>
+    </Compile>
+    <Compile Include="LOGIN.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="LPENJUALAN.Designer.vb">
+      <DependentUpon>LPENJUALAN.vb</DependentUpon>
+    </Compile>
+    <Compile Include="LPENJUALAN.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PEMBAYARAN.Designer.vb">
+      <DependentUpon>PEMBAYARAN.vb</DependentUpon>
+    </Compile>
+    <Compile Include="PEMBAYARAN.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="POPUP.Designer.vb">
+      <DependentUpon>POPUP.vb</DependentUpon>
+    </Compile>
+    <Compile Include="POPUP.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PRODUK.Designer.vb">
+      <DependentUpon>PRODUK.vb</DependentUpon>
+    </Compile>
+    <Compile Include="PRODUK.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SELESAI.Designer.vb">
+      <DependentUpon>SELESAI.vb</DependentUpon>
+    </Compile>
+    <Compile Include="SELESAI.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TRANSAKSI.Designer.vb">
+      <DependentUpon>TRANSAKSI.vb</DependentUpon>
+    </Compile>
+    <Compile Include="TRANSAKSI.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="POPUP2.Designer.vb">
+      <DependentUpon>POPUP2.vb</DependentUpon>
+    </Compile>
+    <Compile Include="POPUP2.vb">
+      <SubType>Form</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="ABSENSI.resx">
+      <DependentUpon>ABSENSI.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DASHBOARD.resx">
+      <DependentUpon>DASHBOARD.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="KARYAWAN.resx">
+      <DependentUpon>KARYAWAN.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LABSENSI.resx">
+      <DependentUpon>LABSENSI.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LOGIN.resx">
+      <DependentUpon>LOGIN.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LPENJUALAN.resx">
+      <DependentUpon>LPENJUALAN.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PEMBAYARAN.resx">
+      <DependentUpon>PEMBAYARAN.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="POPUP.resx">
+      <DependentUpon>POPUP.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PRODUK.resx">
+      <DependentUpon>PRODUK.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="selesai.resx">
+      <DependentUpon>SELESAI.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TRANSAKSI.resx">
+      <DependentUpon>TRANSAKSI.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="POPUP2.resx">
+      <DependentUpon>POPUP2.vb</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="My Project\app.manifest" />
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="App.config" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
+</Project>
